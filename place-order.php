@@ -265,7 +265,7 @@ $verified = $row['verified'];
 					  	foreach ($_POST as $key => $value)
 						{
 							if($key == 'action' || $value == ''){
-								break;
+								continue;
 							}
 							echo '<input name="'.$key.'" type="hidden" value="'.$value.'">';
 						}
