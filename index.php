@@ -174,7 +174,7 @@ include 'includes/wallet.php';
           <div class="container">
             <div class="row">
               <div class="col s12 m12 l12">
-                <h5 class="breadcrumbs-title">Order</h5>
+                <h5 class="breadcrumbs-title">Search Item</h5>
               </div>
             </div>
           </div>
@@ -184,7 +184,14 @@ include 'includes/wallet.php';
 
         <!--start container-->
         <div class="container">
-          <p class="caption">Order your food here.</p>
+        <form action="" method="GET">
+                <table>
+                  <tr>
+                    <td><input type="text" name="search_text" id="search_text" placeholder="Search by Food Name " class="form-control " autocomplete="off"></td>
+                    <td><input type="submit" name="" value="Search"/></td>
+                  </tr>
+                </table>        
+              </form>
           <div class="divider"></div>
 		  <form class="formValidate" id="formValidate" method="post" action="place-order.php" novalidate="novalidate">
             <div class="row">
@@ -204,7 +211,22 @@ include 'includes/wallet.php';
 
                     <tbody>
                         <?php
-                        $result = mysqli_query($con, "SELECT * FROM items where not deleted;");
+                        if (isset($_GET['search_text']) && $_GET['search_text'] != '')
+                        {
+                          $search_text = trim($_GET['search_text']);
+                          $query_string = "SELECT * FROM items WHERE ";
+                          $k = explode(' ', $search_text);
+                          foreach($k as $word){
+                            $query_string .= "not deleted AND name LIKE '%".$word."%' OR ";
+                          }
+                          $query_string = substr($query_string, 0, strlen($query_string) - 3);
+                         
+                        }
+                        else{
+                          $query_string = "SELECT * FROM items where not deleted;";
+                        }                
+                        
+                        $result = mysqli_query($con, $query_string);
                         
                         while($row = mysqli_fetch_array($result))
                         {
