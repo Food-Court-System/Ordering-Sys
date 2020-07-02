@@ -139,7 +139,7 @@ $username = $row['username'];
                 </div>
             </div>
             </li>
-            <li class="bold"><a href="index.php" class="waves-effect waves-cyan"><i class="mdi-editor-border-color"></i> Order Food</a>
+            <li class="bold"><a href="index.php" class="waves-effect waves-cyan"><i class="mdi-editor-border-color"></i>Menu</a>
             </li>
                 <li class="no-padding">
                     <ul class="collapsible collapsible-accordion">
@@ -160,7 +160,7 @@ $username = $row['username'];
                         </li>
                     </ul>
                 </li>			
-            <li class="bold active"><a href="details.php" class="waves-effect waves-cyan"><i class="mdi-social-person"></i> Edit Details</a>
+            <li class="bold active"><a href="details.php" class="waves-effect waves-cyan"><i class="mdi-social-person"></i>User Infomation</a>
             </li>			
         </ul>
         <a href="#" data-activates="slide-out" class="sidebar-collapse btn-floating btn-medium waves-effect waves-light hide-on-large-only cyan"><i class="mdi-navigation-menu"></i></a>
@@ -187,7 +187,7 @@ $username = $row['username'];
 
         <!--start container-->
         <div class="container">
-          <p class="caption">Edit your details here which are required for delivery and contact.</p>
+          <p class="caption">Edit User Infomation.</p>
           <div class="divider"></div>
             <div class="row">
               <div class="col s12 m4 l3">
@@ -277,8 +277,8 @@ $username = $row['username'];
   <footer class="page-footer">
     <div class="footer-copyright">
       <div class="container">
-        <span>Copyright © 2017 <a class="grey-text text-lighten-4" href="#" target="_blank">Students</a> All rights reserved.</span>
-        <span class="right"> Design and Developed by <a class="grey-text text-lighten-4" href="#">Students</a></span>
+        <span>Copyright © 2020 <a class="grey-text text-lighten-4" href="#" target="_blank">Smart Food Court System.</a></span>
+        <span class="right"> <a class="grey-text text-lighten-4" href="#"></a></span>
         </div>
     </div>
   </footer>

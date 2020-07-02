@@ -136,7 +136,7 @@ include 'includes/wallet.php';
                 </div>
             </div>
             </li>
-            <li class="bold active"><a href="index.php" class="waves-effect waves-cyan"><i class="mdi-editor-border-color"></i> Order Food</a>
+            <li class="bold active"><a href="index.php" class="waves-effect waves-cyan"><i class="mdi-editor-border-color"></i>Menu</a>
             </li>
                 <li class="no-padding">
                     <ul class="collapsible collapsible-accordion">
@@ -157,7 +157,7 @@ include 'includes/wallet.php';
                         </li>
                     </ul>
                 </li>				
-            <li class="bold"><a href="details.php" class="waves-effect waves-cyan"><i class="mdi-social-person"></i> Edit Details</a>
+            <li class="bold"><a href="details.php" class="waves-effect waves-cyan"><i class="mdi-social-person"></i>User Infomation</a>
             </li>				
         </ul>
         <a href="#" data-activates="slide-out" class="sidebar-collapse btn-floating btn-medium waves-effect waves-light hide-on-large-only cyan"><i class="mdi-navigation-menu"></i></a>
@@ -196,7 +196,7 @@ include 'includes/wallet.php';
 		  <form class="formValidate" id="formValidate" method="post" action="place-order.php" novalidate="novalidate">
             <div class="row">
               <div class="col s12 m4 l3">
-                <h4 class="header">Order Food</h4>
+                <h4 class="header">Menu</h4>
               </div>
               <div>
                   <table id="data-table-customer" class="responsive-table display" cellspacing="0">
@@ -254,7 +254,7 @@ include 'includes/wallet.php';
 			  </div>
 			  <div>
 			  <div class="input-field col s12">
-                              <button class="btn cyan waves-effect waves-light right" type="submit" name="action">Order
+                              <button class="btn cyan waves-effect waves-light right" type="submit" name="action">Confirm Order
                                 <i class="mdi-content-send right"></i>
                               </button>
                             </div>
@@ -281,7 +281,7 @@ include 'includes/wallet.php';
   <footer class="page-footer">
     <div class="footer-copyright">
       <div class="container">
-        <span>Copyright © 2020 <a class="grey-text text-lighten-4" href="#" target="_blank">Smart Food Court System</a> All rights reserved.</span>
+        <span>Copyright © 2020 <a class="grey-text text-lighten-4" href="#" target="_blank">Smart Food Court System.</a></span>
         <span class="right"> <a class="grey-text text-lighten-4" href="#"></a></span>
         </div>
     </div>

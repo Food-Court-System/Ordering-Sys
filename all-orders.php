@@ -173,9 +173,9 @@ include 'includes/connect.php';
 							  <form method="post" action="routers/edit-orders.php">
 							    <input type="hidden" value="'.$row['id'].'" name="id">
 								<select name="status">
-								<option value="Yet to be delivered" '.($status=='Yet to be delivered' ? 'selected' : '').'>Yet to be delivered</option>
-								<option value="Delivered" '.($status=='Delivered' ? 'selected' : '').'>Delivered</option>
-								<option value="Cancelled by Admin" '.($status=='Cancelled by Admin' ? 'selected' : '').'>Cancelled by Admin</option>
+								<option value="Processing" '.($status=='Processing' ? 'selected' : '').'>Processing</option>
+								<option value="Available" '.($status=='Available' ? 'selected' : '').'>Available</option>
+								<option value="Finish" '.($status=='Finish' ? 'selected' : '').'>Finish</option>
 								<option value="Paused" '.($status=='Paused' ? 'selected' : '').'>Paused</option>								
 								</select>
 							  ').'</p>
