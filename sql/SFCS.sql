@@ -59,7 +59,7 @@ CREATE TABLE `orders` (
   `date` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP,
   `payment_type` varchar(16) NOT NULL DEFAULT 'Wallet',
   `total` int(11) NOT NULL,
-  `status` varchar(25) NOT NULL DEFAULT 'Yet to be delivered',
+  `status` varchar(25) NOT NULL DEFAULT 'Processing',
   `deleted` tinyint(4) NOT NULL DEFAULT '0'
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
@@ -67,13 +67,7 @@ CREATE TABLE `orders` (
 -- Dumping data for table `orders`
 --
 
-INSERT INTO `orders` (`id`, `customer_id`, `address`, `description`, `date`, `payment_type`, `total`, `status`, `deleted`) VALUES
-(1, 2, 'Address 2', 'Sample Description 1', '2017-03-28 17:32:41', 'Wallet', 150, 'Yet to be delivered', 0),
-(2, 2, 'New address 2', '', '2017-03-28 17:43:05', 'Wallet', 130, 'Cancelled by Customer', 1),
-(3, 3, 'Address 3', 'Sample Description 2', '2017-03-28 19:49:33', 'Cash On Delivery', 130, 'Yet to be delivered', 0),
-(4, 3, 'Address 3', '', '2017-03-28 19:52:01', 'Cash On Delivery', 130, 'Cancelled by Customer', 1),
-(5, 3, 'New Address 3', '', '2017-03-28 20:47:28', 'Wallet', 285, 'Paused', 0),
-(6, 3, 'New Address 3', '', '2017-03-30 00:43:31', 'Wallet', 325, 'Cancelled by Customer', 1);
+
 
 -- --------------------------------------------------------
 
@@ -93,21 +87,6 @@ CREATE TABLE `order_details` (
 -- Dumping data for table `order_details`
 --
 
-INSERT INTO `order_details` (`id`, `order_id`, `item_id`, `quantity`, `price`) VALUES
-(1, 1, 2, 2, 90),
-(2, 1, 3, 3, 60),
-(3, 2, 2, 2, 90),
-(4, 2, 3, 2, 40),
-(5, 3, 2, 2, 90),
-(6, 3, 3, 2, 40),
-(7, 4, 2, 2, 90),
-(8, 4, 3, 2, 40),
-(9, 5, 2, 5, 225),
-(10, 5, 3, 2, 40),
-(11, 5, 5, 1, 20),
-(12, 6, 2, 5, 225),
-(13, 6, 3, 3, 60),
-(14, 6, 5, 2, 40);
 
 
 -- --------------------------------------------------------
@@ -134,11 +113,11 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `role`, `name`, `username`, `password`, `email`, `address`, `contact`, `verified`, `deleted`) VALUES
-(1, 'Administrator', 'Admin 1', 'root', 'toor', '', 'Address 1', 9898000000, 1, 0),
-(2, 'Customer', 'Customer 1', 'user1', 'pass1', 'mail2@example.com', 'Address 2', 9898000001, 1, 0),
-(3, 'Customer', 'Customer 2', 'user2', 'pass2', 'mail3@example.com', 'Address 3', 9898000002, 1, 0),
-(4, 'Customer', 'Customer 3', 'user3', 'pass3', '', '', 9898000003, 0, 0),
-(5, 'Customer', 'Customer 4', 'user4', 'pass4', '', '', 9898000004, 0, 1);
+(1, 'Administrator', 'Admin', 'root', 'toor', 'admin@gmail.com', 'Thu Duc', 12300001, 1, 0),
+(2, 'Customer', 'Customer1', 'user1', 'pass1', 'user1@gmail.com', 'District 1', 1000123, 1, 0),
+(3, 'Customer', 'Customer2', 'user2', 'pass2', 'user2@gmail.com', 'District 2', 2000123, 1, 0),
+(4, 'Customer', 'Customer3', 'user3', 'pass3', '', '', 3000123, 0, 0),
+(5, 'Customer', 'Customer4', 'user4', 'pass4', '', '', 4000123, 0, 1);
 
 -- --------------------------------------------------------
 
@@ -173,7 +152,7 @@ CREATE TABLE `wallet_details` (
   `wallet_id` int(11) NOT NULL,
   `number` varchar(16) NOT NULL,
   `cvv` int(3) NOT NULL,
-  `balance` int(11) NOT NULL DEFAULT '2000'
+  `balance` int(11) NOT NULL DEFAULT '0'
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
@@ -182,10 +161,10 @@ CREATE TABLE `wallet_details` (
 
 INSERT INTO `wallet_details` (`id`, `wallet_id`, `number`, `cvv`, `balance`) VALUES
 (1, 1, '6155247490533921', 983, 3430),
-(2, 2, '1887587142382050', 772, 1850),
-(3, 3, '4595809639046830', 532, 1585),
-(4, 4, '5475856443351234', 521, 2000),
-(5, 5, '9076633115663264', 229, 2000);
+(2, 2, '1000000000000001', 111, 1850),
+(3, 3, '2000000000000002', 222, 1585),
+(4, 4, '3000000000000003', 333, 2000),
+(5, 5, '4000000000000004', 444, 2000);
 
 --
 -- Indexes for dumped tables

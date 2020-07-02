@@ -280,13 +280,8 @@ include 'includes/wallet.php';
   <footer class="page-footer">
   <div class="footer-copyright">
       <div class="container">
-<<<<<<< HEAD
         <span>Copyright © 2020 <a class="grey-text text-lighten-4" href="#" target="_blank">Smart Food Court System.</a></span>
         <span class="right"> <a class="grey-text text-lighten-4" href="#"></a></span>
-=======
-        <span>Copyright © 2020 <a class="grey-text text-lighten-4" href="#" target="_blank">Students</a> All rights reserved.</span>
-        <span class="right"> Design and Developed by <a class="grey-text text-lighten-4" href="#">Students</a></span>
->>>>>>> b5340a7b1c312152d92a82678ab2fb69bcf43550
         </div>
     </div>
   </footer>
