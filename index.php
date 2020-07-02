@@ -13,7 +13,7 @@ include 'includes/wallet.php';
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="msapplication-tap-highlight" content="no">
-  <title>Order Food</title>
+  <title>Search Item</title>
 
   <!-- Favicons-->
   <link rel="icon" href="images/favicon/favicon-32x32.png" sizes="32x32">
@@ -143,7 +143,7 @@ include 'includes/wallet.php';
                         <li class="bold"><a class="collapsible-header waves-effect waves-cyan"><i class="mdi-editor-insert-invitation"></i> Orders</a>
                             <div class="collapsible-body">
                                 <ul>
-								<li><a href="orders.php">All Orders</a>
+								<li><a href="orders.php">Orders History</a>
                                 </li>
 								<?php
 									$sql = mysqli_query($con, "SELECT DISTINCT status FROM orders WHERE customer_id = $user_id;");

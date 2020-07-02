@@ -13,7 +13,7 @@ include 'includes/wallet.php';
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="msapplication-tap-highlight" content="no">
-  <title>Past Orders</title>
+  <title>List of placed orders</title>
 
   <!-- Favicons-->
   <link rel="icon" href="images/favicon/favicon-32x32.png" sizes="32x32">
@@ -105,7 +105,7 @@ include 'includes/wallet.php';
 								if(!isset($_GET['status'])){
 										echo 'active';
 									}?>
-									"><a href="orders.php">All Orders</a>
+									"><a href="orders.php">Orders History</a>
                                 </li>
 								<?php
 									$sql = mysqli_query($con, "SELECT DISTINCT status FROM orders  WHERE customer_id = $user_id;;");
@@ -139,7 +139,7 @@ include 'includes/wallet.php';
           <div class="container">
             <div class="row">
               <div class="col s12 m12 l12">
-                <h5 class="breadcrumbs-title">Past Orders</h5>
+                <h5 class="breadcrumbs-title">List of placed orders</h5>
               </div>
             </div>
           </div>
@@ -149,7 +149,7 @@ include 'includes/wallet.php';
 
         <!--start container-->
         <div class="container">
-          <p class="caption">List of your past orders with details</p>
+          <p class="caption">Details of orders</p>
           <div class="divider"></div>
           <!--editableTable-->
 <div id="work-collections" class="seaction">

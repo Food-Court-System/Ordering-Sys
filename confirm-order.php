@@ -40,7 +40,7 @@ if($continue){
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="msapplication-tap-highlight" content="no">
-  <title>Provide Order Details</title>
+  <title>Order Details</title>
 
   <!-- Favicons-->
   <link rel="icon" href="images/favicon/favicon-32x32.png" sizes="32x32">
@@ -120,14 +120,14 @@ if($continue){
                 </div>
             </div>
             </li>
-            <li class="bold"><a href="index.php" class="waves-effect waves-cyan"><i class="mdi-editor-border-color"></i> Order Food</a>
+            <li class="bold"><a href="index.php" class="waves-effect waves-cyan"><i class="mdi-editor-border-color"></i>Menu</a>
             </li>
                 <li class="no-padding">
                     <ul class="collapsible collapsible-accordion">
                         <li class="bold"><a class="collapsible-header waves-effect waves-cyan"><i class="mdi-editor-insert-invitation"></i> Orders</a>
                             <div class="collapsible-body">
                                 <ul>
-								<li><a href="orders.php">All Orders</a>
+								<li><a href="orders.php">Orders History</a>
                                 </li>
 								<?php
 									$sql = mysqli_query($con, "SELECT DISTINCT status FROM orders WHERE customer_id = $user_id;");
@@ -141,7 +141,7 @@ if($continue){
                         </li>
                     </ul>
                 </li>				
-            <li class="bold"><a href="details.php" class="waves-effect waves-cyan"><i class="mdi-social-person"></i> Edit Details</a>
+            <li class="bold"><a href="details.php" class="waves-effect waves-cyan"><i class="mdi-social-person"></i> User Infomation</a>
             </li>				
         </ul>
         <a href="#" data-activates="slide-out" class="sidebar-collapse btn-floating btn-medium waves-effect waves-light hide-on-large-only cyan"><i class="mdi-navigation-menu"></i></a>
@@ -158,7 +158,7 @@ if($continue){
           <div class="container">
             <div class="row">
               <div class="col s12 m12 l12">
-                <h5 class="breadcrumbs-title">Provide Order Details</h5>
+                <h5 class="breadcrumbs-title">Order Details</h5>
               </div>
             </div>
           </div>
@@ -168,7 +168,7 @@ if($continue){
 
         <!--start container-->
         <div class="container">
-          <p class="caption">Receipt</p>
+          <p class="caption"></p>
           <div class="divider"></div>
           <!--editableTable-->
 <div id="work-collections" class="seaction">
@@ -281,7 +281,7 @@ foreach ($_POST as $key => $value)
 <?php if($_POST['payment_type'] == 'Wallet') echo '<input type="hidden" name="balance" value="<?php echo ($balance-$total);?>">'; ?>
 <input type="hidden" name="total" value="<?php echo $total;?>">
 <div class="input-field col s12">
-<button class="btn cyan waves-effect waves-light right" type="submit" name="action" <?php if($_POST['payment_type'] == 'Wallet') {if ($balance-$total < 0) {echo 'disabled'; }}?>>Confirm Order
+<button class="btn cyan waves-effect waves-light right" type="submit" name="action" <?php if($_POST['payment_type'] == 'Wallet') {if ($balance-$total < 0) {echo 'disabled'; }}?>>Confirm
 <i class="mdi-content-send right"></i>
 </button>
 </div>
@@ -311,10 +311,10 @@ foreach ($_POST as $key => $value)
 
   <!-- START FOOTER -->
   <footer class="page-footer">
-    <div class="footer-copyright">
+  <div class="footer-copyright">
       <div class="container">
-        <span>Copyright © 2017 <a class="grey-text text-lighten-4" href="#" target="_blank">Students</a> All rights reserved.</span>
-        <span class="right"> Design and Developed by <a class="grey-text text-lighten-4" href="#">Students</a></span>
+        <span>Copyright © 2020 <a class="grey-text text-lighten-4" href="#" target="_blank">Smart Food Court System.</a></span>
+        <span class="right"> <a class="grey-text text-lighten-4" href="#"></a></span>
         </div>
     </div>
   </footer>
