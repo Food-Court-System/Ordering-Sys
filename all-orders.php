@@ -52,7 +52,7 @@ include 'includes/connect.php';
             <nav class="navbar-color">
                 <div class="nav-wrapper">
                     <ul class="left">                      
-                      <li><h1 class="logo-wrapper"><a href="index.php" class="brand-logo darken-1"><img src="images/materialize-logo.png" alt="logo"></a> <span class="logo-text">Logo</span></h1></li>
+                      <li><h1 class="logo-wrapper"><a href="index.php" class="brand-logo darken-1"><img src="images/Pages/materialize-logo.png" alt="logo"></a> <span class="logo-text">Logo</span></h1></li>
                     </ul>
                 </div>
             </nav>
@@ -74,7 +74,7 @@ include 'includes/connect.php';
             <li class="user-details cyan darken-2">
             <div class="row">
                 <div class="col col s4 m4 l4">
-                    <img src="images/avatar.jpg" alt="" class="circle responsive-img valign profile-image">
+                    <img src="images/Vendor/img11.jpg" alt="" class="circle responsive-img valign profile-image">
                 </div>
 				<div class="col col s8 m8 l8">
                     <ul id="profile-dropdown" class="dropdown-content">
@@ -285,10 +285,10 @@ include 'includes/connect.php';
 
   <!-- START FOOTER -->
   <footer class="page-footer">
-    <div class="footer-copyright">
+  <div class="footer-copyright">
       <div class="container">
-        <span>Copyright © 2017 <a class="grey-text text-lighten-4" href="#" target="_blank">Students</a> All rights reserved.</span>
-        <span class="right"> Design and Developed by <a class="grey-text text-lighten-4" href="#">Students</a></span>
+        <span>Copyright © 2020 <a class="grey-text text-lighten-4" href="#" target="_blank">Smart Food Court System.</a></span>
+        <span class="right"> <a class="grey-text text-lighten-4" href="#"></a></span>
         </div>
     </div>
   </footer>
