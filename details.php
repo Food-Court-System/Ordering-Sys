@@ -103,7 +103,7 @@ $username = $row['username'];
             <nav class="navbar-color">
                 <div class="nav-wrapper">
                     <ul class="left">                      
-                      <li><h1 class="logo-wrapper"><a href="index.php" class="brand-logo darken-1"><img src="images/materialize-logo.png" alt="logo"></a> <span class="logo-text">Logo</span></h1></li>
+                      <li><h1 class="logo-wrapper"><a href="index.php" class="brand-logo darken-1"></a> <span class="logo-text">Logo</span></h1></li>
                     </ul>				
                 </div>
             </nav>
@@ -277,7 +277,7 @@ $username = $row['username'];
   <footer class="page-footer">
     <div class="footer-copyright">
       <div class="container">
-        <span>Copyright © 2017 <a class="grey-text text-lighten-4" href="#" target="_blank">Students</a> All rights reserved.</span>
+        <span>Copyright © 2020 <a class="grey-text text-lighten-4" href="#" target="_blank">Students</a> All rights reserved.</span>
         <span class="right"> Design and Developed by <a class="grey-text text-lighten-4" href="#">Students</a></span>
         </div>
     </div>
