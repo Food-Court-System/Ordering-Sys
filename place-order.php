@@ -102,11 +102,7 @@ $verified = $row['verified'];
             <nav class="navbar-color">
                 <div class="nav-wrapper">
                     <ul class="left">                      
-<<<<<<< HEAD
                       <li><h1 class="logo-wrapper"><a href="index.php" class="brand-logo darken-1"><img src="images/Pages/materialize-logo.png" alt="logo"></a> <span class="logo-text">Logo</span></h1></li>
-=======
-                      <li><h1 class="logo-wrapper"><a href="index.php" class="brand-logo darken-1"></a> <span class="logo-text">Logo</span></h1></li>
->>>>>>> 577fba465994dc9f9ccbb4ba64a4cb14f3d4a6c9
                     </ul>
                     <ul class="right hide-on-med-and-down">                        
                         <li><a href="#" class="waves-effect waves-block waves-light"><i class="mdi-editor-attach-money"><?php echo $balance;?></i></a>
@@ -167,31 +163,8 @@ $verified = $row['verified'];
                         </li>
                     </ul>
                 </li>
-<<<<<<< HEAD
                 			
             <li class="bold"><a href="details.php" class="waves-effect waves-cyan"><i class="mdi-social-person"></i>User Infomation</a>
-=======
-                <li class="no-padding">
-                    <ul class="collapsible collapsible-accordion">
-                        <li class="bold">
-                            <div class="collapsible-body">
-                                <ul>
-								<li><a href="tickets.php">All Tickets</a>
-                                </li>
-								<?php
-									$sql = mysqli_query($con, "SELECT DISTINCT status FROM tickets WHERE poster_id = $user_id AND not deleted;");
-									while($row = mysqli_fetch_array($sql)){
-                                    echo '<li><a href="tickets.php?status='.$row['status'].'">'.$row['status'].'</a>
-                                    </li>';
-									}
-									?>
-                                </ul>
-                            </div>
-                        </li>
-                    </ul>
-                </li>				
-            <li class="bold"><a href="details.php" class="waves-effect waves-cyan"><i class="mdi-social-person"></i> Edit Details</a>
->>>>>>> 577fba465994dc9f9ccbb4ba64a4cb14f3d4a6c9
             </li>				
         </ul>
         <a href="#" data-activates="slide-out" class="sidebar-collapse btn-floating btn-medium waves-effect waves-light hide-on-large-only cyan"><i class="mdi-navigation-menu"></i></a>
@@ -402,13 +375,8 @@ $verified = $row['verified'];
   <footer class="page-footer">
   <div class="footer-copyright">
       <div class="container">
-<<<<<<< HEAD
         <span>Copyright © 2020 <a class="grey-text text-lighten-4" href="#" target="_blank">Smart Food Court System.</a></span>
         <span class="right"> <a class="grey-text text-lighten-4" href="#"></a></span>
-=======
-        <span>Copyright © 2020 <a class="grey-text text-lighten-4" href="#" target="_blank">Students</a> All rights reserved.</span>
-        <span class="right"> Design and Developed by <a class="grey-text text-lighten-4" href="#">Students</a></span>
->>>>>>> 577fba465994dc9f9ccbb4ba64a4cb14f3d4a6c9
         </div>
     </div>
   </footer>

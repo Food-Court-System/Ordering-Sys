@@ -96,11 +96,7 @@ include 'includes/wallet.php';
             <nav class="navbar-color">
                 <div class="nav-wrapper">
                     <ul class="left">                      
-<<<<<<< HEAD
                       <li><h1 class="logo-wrapper"><a href="index.php" class="brand-logo darken-1"><img src="images/Pages/materialize-logo.png" alt="logo"></a> <span class="logo-text">Logo</span></h1></li>
-=======
-                      <li><h1 class="logo-wrapper"><a href="index.php" class="brand-logo darken-1"></a> <span class="logo-text">Logo</span></h1></li>
->>>>>>> 577fba465994dc9f9ccbb4ba64a4cb14f3d4a6c9
                     </ul>
                     <ul class="right hide-on-med-and-down">                        
                         <li><a href="#" class="waves-effect waves-block waves-light"><i class="mdi-editor-attach-money"><?php echo $balance;?></i></a>
